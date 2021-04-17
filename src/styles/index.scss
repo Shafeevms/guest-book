@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('./fonts/TrebuchetMS.woff') format('woff');
+  font-size: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('./fonts/TrebuchetMS-Bold.woff') format('woff');
+  font-size: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@import 'normalize.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 1200px;
+  background: rgb(229,235,225);
+  background: linear-gradient(162deg, rgba(229,235,225,0.5088410364145659) 0%, rgba(160,162,154,0.4192051820728291) 35%, rgba(197,204,205,0.36878501400560226) 100%);
+}
+
+.header {
+  padding: 40px 0;;
+  text-align: center;
+  background: rgb(93,198,18);
+  background: linear-gradient(90deg, rgba(93,198,18,1) 0%, rgba(170,208,73,1) 35%, rgba(21,160,187,1) 100%);
+}
+
+.article {
+  margin-bottom: 40px;
+  line-height: 25px;
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    max-width: 600px;
+    color: rgb(24, 44, 157);
+  }
+  &__img {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  &__text {
+    max-width: 1050px;
+  }
+}
+
+.comment {
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 700px;
+  border-bottom: 1px solid #cacaca;
+  &__name {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+}
+
+.addcomment {
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: block;
+    min-height: 200px;
+    max-width: 700px;
+    min-width: 320px;
+    width: 100%;
+    @media  screen and (max-width: 390px) {
+      min-width: 220px;
+    }
+  }
+  &__name {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+  }
+  &__btn {
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+  }
+}

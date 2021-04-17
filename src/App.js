@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Comments from './components/Comments';
+import AddComment from './components/AddComment';
 
-function App() {
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
+import { commentsReducer } from './store/commentsReducer';
+
+import thunk from 'redux-thunk';
+
+const rootReducer = combineReducers({
+  comments: commentsReducer,
+});
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  rootReducer,
+  composeEnhancers(
+    applyMiddleware(
+      thunk,
+    ),
+  ),
+);
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Comments />
+      <AddComment />
+    </Provider>
   );
-}
+};
 
 export default App;
