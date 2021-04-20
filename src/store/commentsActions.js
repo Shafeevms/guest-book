@@ -25,9 +25,6 @@ export const getComments = () => {
 export const addComment = (formData) => {
   return async dispatch => {
     try {
-      dispatch({
-        type: TYPES.ADD_COMMENT_PENDING,
-      });
       const res = await fetch(URL, {
         method: 'POST',
         body: JSON.stringify(formData),
