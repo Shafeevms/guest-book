@@ -116,13 +116,18 @@ h1, h2, h3, p {
 
 .loader {
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   &____img {
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
     animation: spin .5s linear infinite;
+    z-index: 3;
   }
 }
 
