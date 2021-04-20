@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { getComments } from '../store/commentsActions';
 import { useSelector, useDispatch } from 'react-redux';
-import Loader from './Loader';
 
 const Comments = () => {
   const dispatch = useDispatch();
@@ -15,7 +14,7 @@ const Comments = () => {
     <>
       {
         isLoading
-          ? <Loader />
+          ? <div>загружаем...</div>
           : null
         }
         {
