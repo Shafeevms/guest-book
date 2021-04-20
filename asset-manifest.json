@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/guest-book/static/css/main.4d768d36.chunk.css",
-    "main.js": "/guest-book/static/js/main.38e7a5df.chunk.js",
-    "main.js.map": "/guest-book/static/js/main.38e7a5df.chunk.js.map",
+    "main.css": "/guest-book/static/css/main.22af4f1b.chunk.css",
+    "main.js": "/guest-book/static/js/main.72c47b9b.chunk.js",
+    "main.js.map": "/guest-book/static/js/main.72c47b9b.chunk.js.map",
     "runtime-main.js": "/guest-book/static/js/runtime-main.2a2aa031.js",
     "runtime-main.js.map": "/guest-book/static/js/runtime-main.2a2aa031.js.map",
     "static/js/2.b9a8a4c8.chunk.js": "/guest-book/static/js/2.b9a8a4c8.chunk.js",
     "static/js/2.b9a8a4c8.chunk.js.map": "/guest-book/static/js/2.b9a8a4c8.chunk.js.map",
     "index.html": "/guest-book/index.html",
-    "static/css/main.4d768d36.chunk.css.map": "/guest-book/static/css/main.4d768d36.chunk.css.map",
+    "static/css/main.22af4f1b.chunk.css.map": "/guest-book/static/css/main.22af4f1b.chunk.css.map",
     "static/js/2.b9a8a4c8.chunk.js.LICENSE.txt": "/guest-book/static/js/2.b9a8a4c8.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/guest-book/static/media/TrebuchetMS.af3cbb0e.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.2a2aa031.js",
     "static/js/2.b9a8a4c8.chunk.js",
-    "static/css/main.4d768d36.chunk.css",
-    "static/js/main.38e7a5df.chunk.js"
+    "static/css/main.22af4f1b.chunk.css",
+    "static/js/main.72c47b9b.chunk.js"
   ]
 }
